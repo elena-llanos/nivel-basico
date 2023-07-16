@@ -1,0 +1,49 @@
+<p>two-way-data-binding works!</p>
+
+<label for="nombre">Nombre</label>
+<input id="nombre" type="text" [(ngModel)]="miTexto">
+
+
+
+<div class="contenedor-general">
+    <div class="contenedor-select">
+
+        <select class="form-select mb-4" [(ngModel)]="miColorDeFondo">
+            <option selected value="blue">Elige un color de fondo</option>
+            <option value="blue">Azul</option>
+            <option value="yellow">Amarillo</option>
+            <option value="red">Rojo</option>
+        </select>
+    </div>
+
+
+    <select class="form-select mb-4" [(ngModel)]="miColor">
+        <option selected value="white">Elige un color de texto</option>
+        <option value="white">Blanco</option>
+        <option value="black">Negro</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <select class="form-select mb-4" [(ngModel)]="miPadding">
+        <option selected value="0.5rem">Elige un padding</option>
+        <option value="0.5rem">Pequeño</option>
+        <option value="1rem">Mediano</option>
+        <option value="2rem">Grande</option>
+    </select>
+
+    <select class="form-select" [(ngModel)]="miSize">
+        <option selected value="0.5rem">Elige un tamaño de texto</option>
+        <option value="1rem">Pequeño</option>
+        <option value="2rem">Mediano</option>
+        <option value="3rem">Grande</option>
+    </select>
+
+</div>
+<div>
+    <p class="mt-5 ms-5 w-75" [ngStyle]="{
+        'color':miColor,
+        'background-color': miColorDeFondo,
+        'paddig': miPadding,
+        'font-size': miSize,
+    }">{{miTexto}}</p>
+</div>

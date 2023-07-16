@@ -1,0 +1,22 @@
+.fondo-azul{
+    background-color: rgb(185, 162, 238);
+    color: black;
+}
+.texto-grande{
+    font-size: 40;
+}
+
+
+.texto-grueso{
+    font-weight: bolder;
+    font-size: 50;
+}
+.longitud50{
+    width: 50%;
+}
+.fondo-amarillo{
+    background-color: rgb(246, 240, 75);
+}
+.fondo-rojo{
+    background-color: rgb(232, 37, 37);
+}

@@ -1,0 +1,82 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.ficha-contenedor{
+    width:940px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 18px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.imagen-contenedor{
+    width: 25%;
+    
+    
+}
+.datos-contenedor{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+
+.precio-contenedor{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.precio{
+    display: flex;
+    font-size: 26px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-align: right;
+}
+.iconos{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imagen-contenedor img{
+    /* esto hace al fondo blanco, trasparente */
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.iconos i{
+    font-size: 1.5rem;
+}
+.caracteristicas-principales li{
+    font-size: 16px;;
+
+}
+.caracteristicas-principales {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+}
+.caracteristicas-principales li:before{
+    font-family: "FontAwesome";
+    font-size: 8px;
+    padding-right: 6px;
+    content: "\f111";
+    vertical-align: middle;
+}
+.modelo{
+    margin-left: 8px;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+.fabricante{
+    font-size: 18px;
+    font-weight: bold;
+}

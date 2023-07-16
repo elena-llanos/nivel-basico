@@ -1,0 +1,24 @@
+<p>ng-style works!</p>
+<div class="contenedor-principal">
+
+    <button (click)="agrandar($event)" >++ Agrandar</button>
+
+</div>
+
+<p>El tamaño del texto es: {{size}}    pixels</p>
+
+<div [ngStyle]="{
+    'background-color': bgc,
+    'color': '#FFFFFF',
+    'width': '1000px',
+    'heigth': '200px',
+    'display': 'flex',
+    'justify-content': 'center',
+    'align-items': 'center',
+    'font-size.px': size
+}">
+    En un lugar de la mancha
+</div>
+
+<input (input)="cambioFondo($event)" type="text">
+

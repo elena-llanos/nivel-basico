@@ -1,0 +1,11 @@
+.corazon{
+    font-size: 1.5rem;
+    color: #b9b9b9;
+    cursor: pointer;
+}
+
+.corazon-elegido{
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+<div class="ficha-contenedor" *ngFor="let guitarra of aGuitarras ">
+    <div class="imagen-contenedor">
+        <img src="{{guitarra.urlImagen}}" alt="{{guitarra.fabricante}} {{guitarra.modelo}}">
+    </div>
+    <div class="datos-contenedor">
+        <div>
+            <span class="fabricante">{{guitarra.fabricante}}</span>
+            <span class="modelo">{{guitarra.modelo}}</span>
+           <!-- <div><i *ngFor="let estrellas of aEstrellas" class="fa-solid fa-star"></i>{{guitarra.nLikes}}</div> -->
+           <div><app-estrellas-likes [nStars]="guitarra.nLikes"></app-estrellas-likes>{{guitarra.nLikes}}</div>
+            <ul class="caracteristicas-principales">
+                <li>{{guitarra.propiedad1}}</li>
+                <li>{{guitarra.propiedad2}}</li>
+                <li>{{guitarra.propiedad3}}</li>
+                
+            </ul>
+        </div>
+        <div>
+           {{guitarra.stock}}
+        </div>
+
+    </div>
+    <div class="precio-contenedor">
+        <p class="precio">{{guitarra.pvp}}€</p>
+
+        <div class="iconos">
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+           <div><app-corazon></app-corazon></div>
+            <div><i class="fa-solid fa-mobile-screen"></i></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</div>

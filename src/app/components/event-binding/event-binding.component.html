@@ -1,0 +1,13 @@
+
+<div class="{{miClase}}">Hola Mundo</div>
+<p [class]="miClase">Hola Mundo</p>
+
+<button [disabled]="estado"  (click)="deshabilitaButton($event)">Deshabilítame!</button>
+<button   (click)="habilitaButton($event)">Habilítame!</button>
+<!--el click es un output, bananas; manda al modelo, el paréntesis está asociado a un evento-->
+
+
+<div>
+    <input (input)="onInput($event)" type="text">
+</div>
+<p [class]="miClase">{{miTexto}}</p>

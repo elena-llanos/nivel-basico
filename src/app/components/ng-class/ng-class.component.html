@@ -1,0 +1,35 @@
+<p>ng-class works!</p>
+
+<p [ngClass]="aClases">En un lugar de la mancha</p>
+
+
+<p [ngClass]="getUnaClase()">En un lugar de la mancha</p>
+
+
+<p [ngClass]="aClases">En un lugar de la Mancha</p>
+
+<p class="fondo-azul texto-grande">En un lugar de la Mancha</p>
+
+<p [ngClass]="[
+'fondo-azul',
+'texto-grande'
+]">En un lugar de la Mancha</p>
+
+<p [ngClass]="getUnaClase()">En un lugar de la Mancha</p>
+
+<!-- CONDICIONALES
+DEPENDIENDO DE UNA CONDICIÓN TRUE O FALSE QUIERO APLICAR UNA U OTRA CLASE -->
+<p [ngClass]="
+  miCondicion ? 'fondo-verde' : 'fondo-azul'
+
+">En un lugar de la Mancha</p>
+
+
+<p [ngClass]="{
+    'fondo-verde' : true,
+    'texto-grande' : true,
+    'longitud50': true
+
+}">De cuyo nombre no quiero acordarme</p>
+
+<!--Dependiendo de una otra u otra condición true o false quiero aplicar una u otra clase-->

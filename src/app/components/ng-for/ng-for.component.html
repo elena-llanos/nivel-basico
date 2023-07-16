@@ -1,0 +1,11 @@
+<div *ngFor="let piloto of aPilotos" class="contenedor-piloto">
+<p>{{piloto.nombre}}</p>
+<p>{{piloto.escuderia}}</p>
+<!--<p>{{piloto.campeonMundial}}</p>-->
+
+<p *ngIf="piloto.campeonMundial">Es campeón mundial</p>
+<p *ngIf="!piloto.campeonMundial">No es campeón mundial</p>
+
+
+
+</div>
